@@ -1,0 +1,191 @@
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/************* headings************/
+
+.big-heading{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+
+/**************** containers ***************/
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+/****************** Sections ******************/
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff;
+
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+/**************navigation bar ***************/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*************** title section **************/
+
+
+ #title .container-fluid{   /*Combine classes/id's to over-ride other classes.In this case, all "container-fluid actions, will not apply with the 'container-fluid in the title section'" */
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/*************** Title image***************/
+.title-image {
+  width: 70%;
+  transform: rotate(25deg);
+  position:absolute;      /*Z index lesson/Absolute takes elements out of the html flow and stacking order*/
+
+  padding-bottom: 6px;
+  padding-top:6px;
+
+}
+
+
+/************** Download Buttons *************/
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/**************** features *****************/
+#features{
+   position:relative;
+   z-index:1;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color:#ff4c68;
+}
+
+/********************** Testimonial section ***************/
+#testimonials{
+ background-color: #ef8172;       /*id's over-ride classes, so althought the sections are grouped (colored/white) this one will remain pink */
+
+}
+.testimonial-image{
+  width: 15%;
+  border-radius: 100%;
+  margin:20px;
+
+}
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-images{
+  width:15%;
+  margin:20px 20px 50px
+}
+
+.testimonial-text{
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+/****************** Pricing***************/
+
+#pricing{
+  padding:100px;
+  }
+
+  .pricing-column{
+    padding:3% 2%;
+  }
+
+  .price-text{
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  /****************** cta*****************/
+
+  }
+  .cta-header{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+
+
+/**************footer***************/
+
+.footer-icons{
+  margin:20px 10px;
+}
+
+
+
+/* media querys/css break points can change things in your content when certain things are true. In this case, when the screen is up to 1028px */
+
+  @media (max-width: 1028px) {
+
+    #title{
+      text-align: center;
+    }
+    .title-image {
+      position:static;
+      transform: rotate(0);
+    }
+  }
